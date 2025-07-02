@@ -1,0 +1,15 @@
+.root {
+  display: grid;
+  grid-template-columns: 250px 400px 150px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    grid-template-columns: 1fr;
+    gap: 0.075rem;
+    border-bottom: 1px solid var(--divider-color);
+    padding: 0.25rem 0 0.5rem;
+  }
+}
